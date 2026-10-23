@@ -2,6 +2,12 @@
 
 A Python application for organising job listings, reviewing their requirements and searching a saved collection. It brings the original listing text, profile notes and requirement evidence into one workspace.
 
+## Live demo
+
+[Open JobFit Navigator](https://jobfit-navigator.streamlit.app/)
+
+The online demo uses fictional data in a temporary workspace. It is not intended for storing personal data permanently.
+
 ## What you can do
 
 - Save and edit listings with company, location, work type and application status.
