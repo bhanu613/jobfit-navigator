@@ -49,7 +49,7 @@ The demo uses fictional session data. Use the local launcher for a persistent wo
 python -m unittest discover -s tests -v
 ```
 
-All 59 automated tests passed on Windows with Python 3.12. Manual checks also covered sidebar navigation, requirement interpretation for a fictional listing and a real semantic search.
+All 64 automated tests passed on Windows with Python 3.12. Manual checks also covered sidebar navigation, requirement interpretation for a fictional listing and a real semantic search.
 
 ## Project layout
 

@@ -12,7 +12,7 @@ For each saved listing the app does this:
 4. Lets you override a label with a saved review and a reason.
 5. Compares the result with your profile notes and counts concepts across all saved listings.
 
-The rules cover plain statements such as "Python is required", repeated statements across a list, "need not" wording, and requirement headings in English and German. Anything outside them stays uncertain, so you can check the original text.
+The rules cover plain statements such as "Python is required", lists with or without "and", "you must have" wording, repeated statements across a list, "need not" wording, and requirement headings in English and German. Anything outside them stays uncertain, so you can check the original text.
 
 A saved review belongs to the listing text it was made on. If the listing is edited, or the rule changes later, the app flags the review instead of silently reusing it.
 

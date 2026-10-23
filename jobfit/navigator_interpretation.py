@@ -143,3 +143,40 @@ def interpret_mention(text, mention, mentions):
         if ',' in template and re.search(r'\b(?:are|is)\s+a\s+plus\s*$',template,re.I):
             return 'uncertain','incomplete_final_list_review'
     return _before_final_refinement(text,mention,mentions)
+
+# Lists written with commas only, and "must have" lists. These run only when the earlier rules were unsure.
+_L_SEP = r'(?:\s*,\s*(?:(?:and|und|&)\s+)?|\s+(?:and|und|&)\s+)'
+_L_LIST = 'SKILL(?:' + _L_SEP + 'SKILL)*'
+_L_HEAD = r'(?:(?:strong|solid|good|proven|hands-on)\s+)?(?:(?:experience|knowledge|skills)\s+(?:with|in|of)\s+)?'
+_L_TAIL = r'(?:\s+(?:skills|knowledge|experience|kenntnisse))?\s*,?\s+'
+_L_REQ = r'(?:(?:is|are)\s+(?:required|mandatory|essential|needed|a\s+must)|(?:ist|sind)\s+(?:erforderlich|notwendig|zwingend))'
+_L_DES = r'(?:(?:is|are)\s+(?:desirable|preferred|optional|(?:a\s+)?plus|nice[ -]to[ -]have)|(?:ist|sind)\s+(?:wünschenswert|von\s+vorteil|optional))'
+_L_MUST = r'(?:you|we|candidates|applicants)\s+(?:must|need\s+to)\s+(?:have|know|master|be\s+(?:familiar|proficient)\s+(?:with|in))\s+(?:experience\s+(?:with|in)\s+)?'
+_LIST_PATTERNS = (
+    ('required', '^' + _L_MUST + _L_LIST + '$'),
+    ('required', '^' + _L_HEAD + _L_LIST + _L_TAIL + _L_REQ + '$'),
+    ('desirable', '^' + _L_HEAD + _L_LIST + _L_TAIL + _L_DES + '$'),
+)
+_before_list_rule = interpret_mention
+
+def interpret_mention(text, mention, mentions):
+    result = _before_list_rule(text, mention, mentions)
+    if result[0] != 'uncertain':
+        return result
+    left, right = clause_bounds(text, mention['start'], mention['end'])
+    local = sorted((m for m in mentions if left <= m['start'] and m['end'] <= right), key=lambda m: (m['start'], m['end']))
+    if len(local) < 1 or any(a['end'] > b['start'] for a, b in zip(local, local[1:])):
+        return result
+    cursor = left
+    parts = []
+    for m in local:
+        parts.extend((text[cursor:m['start']], 'SKILL'))
+        cursor = m['end']
+    parts.append(text[cursor:right])
+    template = re.sub(r'^[-*•]\s*', '', ' '.join(''.join(parts).split()))
+    if _LEARNING_SCOPE.search(template) or COMPLEX.search(template) or UNRESOLVED_NEGATION.search(template):
+        return result
+    for status, pattern in _LIST_PATTERNS:
+        if re.fullmatch(pattern, template, re.I):
+            return (status, 'bounded_list_v2')
+    return result

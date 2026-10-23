@@ -16,6 +16,7 @@ The rules cover common patterns, not all grammar. Conditions, lists with unknown
 
 - Open the comparison page, read the source text and save your own label with a reason.
 - Not done: an annotated set of examples to measure the rules.
+- Lists without "and", such as `Python, SQL are required`, are now read. Lists with "not", "or" or "but" still need your own label.
 
 ## Profile
 
@@ -30,7 +31,7 @@ BM25 matches words. Semantic search matches related meaning, so a listing that s
 
 ## Testing and setup
 
-The 59 tests check specific examples and cannot show how accurate the app is overall. I checked the Windows launch and a real semantic search locally. A fresh install, hosting online and other operating systems still need checking.
+The 64 tests check specific examples and cannot show how accurate the app is overall. I checked the Windows launch and a real semantic search locally. A fresh install, hosting online and other operating systems still need checking.
 
 `launch.py` loads PyTorch first because that avoided an error on my machine, and I have not found the cause. Dependencies are pinned in the requirements files, but their own dependencies are not locked.
 
