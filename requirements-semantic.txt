@@ -1,0 +1,2 @@
+# Retained for compatibility; normal setup includes semantic dependencies.
+-r requirements.txt

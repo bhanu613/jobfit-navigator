@@ -1,0 +1,6 @@
+streamlit==1.50.0
+numpy==1.26.4
+pandas==2.2.3
+pyarrow==18.1.0
+sentence-transformers==3.4.1
+transformers==4.48.3

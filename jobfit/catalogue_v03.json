@@ -1,0 +1,436 @@
+{
+  "version": "project-catalogue-0.3.1",
+  "provenance": "Project-authored explicit terms. No externally verified ESCO mappings. Needs corpus-based human review.",
+  "review_status": "draft_internal_checks_only",
+  "concepts": [
+    {
+      "key": "python",
+      "name": "Python",
+      "aliases": [
+        "python"
+      ],
+      "esco_uri": null
+    },
+    {
+      "key": "sql",
+      "name": "SQL",
+      "aliases": [
+        "sql",
+        "structured query language"
+      ],
+      "esco_uri": null
+    },
+    {
+      "key": "docker",
+      "name": "Docker",
+      "aliases": [
+        "docker"
+      ],
+      "esco_uri": null
+    },
+    {
+      "key": "scikit-learn",
+      "name": "Scikit-learn",
+      "aliases": [
+        "scikit-learn",
+        "sklearn",
+        "scikit learn"
+      ],
+      "esco_uri": null
+    },
+    {
+      "key": "pandas",
+      "name": "pandas",
+      "aliases": [
+        "pandas"
+      ],
+      "esco_uri": null
+    },
+    {
+      "key": "numpy",
+      "name": "NumPy",
+      "aliases": [
+        "numpy"
+      ],
+      "esco_uri": null
+    },
+    {
+      "key": "pytorch",
+      "name": "PyTorch",
+      "aliases": [
+        "pytorch"
+      ],
+      "esco_uri": null
+    },
+    {
+      "key": "tensorflow",
+      "name": "TensorFlow",
+      "aliases": [
+        "tensorflow"
+      ],
+      "esco_uri": null
+    },
+    {
+      "key": "git",
+      "name": "Git",
+      "aliases": [
+        "git"
+      ],
+      "esco_uri": null
+    },
+    {
+      "key": "linux",
+      "name": "Linux",
+      "aliases": [
+        "linux"
+      ],
+      "esco_uri": null
+    },
+    {
+      "key": "postgresql",
+      "name": "PostgreSQL",
+      "aliases": [
+        "postgresql",
+        "postgres"
+      ],
+      "esco_uri": null
+    },
+    {
+      "key": "mysql",
+      "name": "MySQL",
+      "aliases": [
+        "mysql"
+      ],
+      "esco_uri": null
+    },
+    {
+      "key": "sqlite",
+      "name": "SQLite",
+      "aliases": [
+        "sqlite"
+      ],
+      "esco_uri": null
+    },
+    {
+      "key": "power-bi",
+      "name": "Power BI",
+      "aliases": [
+        "power bi",
+        "powerbi"
+      ],
+      "esco_uri": null
+    },
+    {
+      "key": "tableau",
+      "name": "Tableau",
+      "aliases": [
+        "tableau"
+      ],
+      "esco_uri": null
+    },
+    {
+      "key": "excel",
+      "name": "Excel",
+      "aliases": [
+        "excel",
+        "microsoft excel"
+      ],
+      "esco_uri": null
+    },
+    {
+      "key": "kubernetes",
+      "name": "Kubernetes",
+      "aliases": [
+        "kubernetes",
+        "k8s"
+      ],
+      "esco_uri": null
+    },
+    {
+      "key": "aws",
+      "name": "Amazon Web Services",
+      "aliases": [
+        "aws",
+        "amazon web services"
+      ],
+      "esco_uri": null
+    },
+    {
+      "key": "azure",
+      "name": "Microsoft Azure",
+      "aliases": [
+        "azure",
+        "microsoft azure"
+      ],
+      "esco_uri": null
+    },
+    {
+      "key": "hugging-face-transformers",
+      "name": "Hugging Face Transformers",
+      "aliases": [
+        "hugging face transformers"
+      ],
+      "esco_uri": null
+    },
+    {
+      "key": "pyspark",
+      "name": "PySpark",
+      "aliases": [
+        "pyspark"
+      ],
+      "esco_uri": null
+    },
+    {
+      "key": "apache-spark",
+      "name": "Apache Spark",
+      "aliases": [
+        "apache spark"
+      ],
+      "esco_uri": null
+    },
+    {
+      "key": "apache-airflow",
+      "name": "Apache Airflow",
+      "aliases": [
+        "apache airflow"
+      ],
+      "esco_uri": null
+    },
+    {
+      "key": "fastapi",
+      "name": "FastAPI",
+      "aliases": [
+        "fastapi"
+      ],
+      "esco_uri": null
+    },
+    {
+      "key": "flask",
+      "name": "Flask",
+      "aliases": [
+        "flask"
+      ],
+      "esco_uri": null
+    },
+    {
+      "key": "mlflow",
+      "name": "MLflow",
+      "aliases": [
+        "mlflow"
+      ],
+      "esco_uri": null
+    },
+    {
+      "key": "jupyter",
+      "name": "Jupyter",
+      "aliases": [
+        "jupyter",
+        "jupyter notebook"
+      ],
+      "esco_uri": null
+    },
+    {
+      "key": "matplotlib",
+      "name": "Matplotlib",
+      "aliases": [
+        "matplotlib"
+      ],
+      "esco_uri": null
+    },
+    {
+      "key": "seaborn",
+      "name": "Seaborn",
+      "aliases": [
+        "seaborn"
+      ],
+      "esco_uri": null
+    },
+    {
+      "key": "plotly",
+      "name": "Plotly",
+      "aliases": [
+        "plotly"
+      ],
+      "esco_uri": null
+    },
+    {
+      "key": "scipy",
+      "name": "SciPy",
+      "aliases": [
+        "scipy"
+      ],
+      "esco_uri": null
+    },
+    {
+      "key": "spacy",
+      "name": "spaCy",
+      "aliases": [
+        "spacy"
+      ],
+      "esco_uri": null
+    },
+    {
+      "key": "nltk",
+      "name": "NLTK",
+      "aliases": [
+        "nltk"
+      ],
+      "esco_uri": null
+    },
+    {
+      "key": "opencv",
+      "name": "OpenCV",
+      "aliases": [
+        "opencv"
+      ],
+      "esco_uri": null
+    },
+    {
+      "key": "xgboost",
+      "name": "XGBoost",
+      "aliases": [
+        "xgboost"
+      ],
+      "esco_uri": null
+    },
+    {
+      "key": "lightgbm",
+      "name": "LightGBM",
+      "aliases": [
+        "lightgbm"
+      ],
+      "esco_uri": null
+    },
+    {
+      "key": "mongodb",
+      "name": "MongoDB",
+      "aliases": [
+        "mongodb"
+      ],
+      "esco_uri": null
+    },
+    {
+      "key": "elasticsearch",
+      "name": "Elasticsearch",
+      "aliases": [
+        "elasticsearch"
+      ],
+      "esco_uri": null
+    },
+    {
+      "key": "bigquery",
+      "name": "BigQuery",
+      "aliases": [
+        "bigquery",
+        "google bigquery"
+      ],
+      "esco_uri": null
+    },
+    {
+      "key": "snowflake",
+      "name": "Snowflake",
+      "aliases": [
+        "snowflake"
+      ],
+      "esco_uri": null
+    },
+    {
+      "key": "databricks",
+      "name": "Databricks",
+      "aliases": [
+        "databricks"
+      ],
+      "esco_uri": null
+    },
+    {
+      "key": "natural-language-processing",
+      "name": "Natural language processing",
+      "aliases": [
+        "natural language processing",
+        "natürliche sprachverarbeitung",
+        "nlp"
+      ],
+      "esco_uri": null
+    },
+    {
+      "key": "machine-learning",
+      "name": "Machine learning",
+      "aliases": [
+        "machine learning",
+        "maschinelles lernen"
+      ],
+      "esco_uri": null
+    },
+    {
+      "key": "deep-learning",
+      "name": "Deep learning",
+      "aliases": [
+        "deep learning"
+      ],
+      "esco_uri": null
+    },
+    {
+      "key": "computer-vision",
+      "name": "Computer vision",
+      "aliases": [
+        "computer vision"
+      ],
+      "esco_uri": null
+    },
+    {
+      "key": "data-analysis",
+      "name": "Data analysis",
+      "aliases": [
+        "data analysis",
+        "datenanalyse"
+      ],
+      "esco_uri": null
+    },
+    {
+      "key": "data-visualisation",
+      "name": "Data visualisation",
+      "aliases": [
+        "data visualization",
+        "data visualisation",
+        "datenvisualisierung"
+      ],
+      "esco_uri": null
+    },
+    {
+      "key": "statistics",
+      "name": "Statistics",
+      "aliases": [
+        "statistics",
+        "statistik"
+      ],
+      "esco_uri": null
+    },
+    {
+      "key": "information-retrieval",
+      "name": "Information retrieval",
+      "aliases": [
+        "information retrieval"
+      ],
+      "esco_uri": null
+    },
+    {
+      "key": "large-language-models",
+      "name": "Large language models",
+      "aliases": [
+        "large language model",
+        "large language models",
+        "llms"
+      ],
+      "esco_uri": null
+    },
+    {
+      "key": "retrieval-augmented-generation",
+      "name": "Retrieval-augmented generation",
+      "aliases": [
+        "retrieval augmented generation",
+        "retrieval-augmented generation"
+      ],
+      "esco_uri": null
+    }
+  ]
+}
