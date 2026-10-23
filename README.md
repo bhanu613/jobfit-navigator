@@ -20,6 +20,40 @@ The online demo uses fictional data in a temporary workspace. It is not intended
 - Explore requirement counts across listings and trace them back to source text.
 - Export metadata, comparisons and profile records, and download a workspace backup.
 
+## Screenshots
+
+Local interface examples captured on 23 October 2026 using a
+development workspace containing demonstration and test listings.
+Profile notes are user-entered statements, not verified assessments.
+
+### Source-linked job comparison
+
+Inspect requirement categories alongside profile documentation and
+the original listing. In this example, “Python and SQL are required”
+produces a Required category for both concepts.
+
+![Comparison showing Python and SQL as required alongside profile documentation](docs/screenshots/comparison-coordinated-requirements.png)
+
+### Search saved opportunities
+
+BM25 keyword search retrieves saved listings for the query `AWS`.
+Search relevance is separate from requirement interpretation and
+candidate suitability.
+
+![BM25 search for AWS showing the submitted query and saved-listing results](docs/screenshots/search-bm25-aws.png)
+
+### Collection insights
+
+Explore requirement categories across saved listings, alongside
+profile documentation and preparation guidance. Counts describe this
+saved collection, not the wider labour market.
+
+![Collection insights showing requirement counts and profile documentation](docs/screenshots/collection-insights.png)
+
+[View the full screenshot gallery](docs/SCREENSHOTS.md), including
+semantic search, metadata filtering, profile management, mixed
+requirements and language wording.
+
 ## How it works
 
 The application detects concept names and aliases, applies contextual rules to requirement wording and links each interpretation to its source. Saved reviews are tied to the listing text.
