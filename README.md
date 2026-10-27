@@ -22,37 +22,28 @@ The online demo uses fictional data in a temporary workspace. It is not intended
 
 ## Screenshots
 
-Local interface examples captured on 23 October 2026 using a
-development workspace containing demonstration and test listings.
-Profile notes are user-entered statements, not verified assessments.
+Examples from a local run with test listings.
 
-### Source-linked job comparison
+### Job comparison
 
-Inspect requirement categories alongside profile documentation and
-the original listing. In this example, “Python and SQL are required”
-produces a Required category for both concepts.
+View job requirements alongside profile notes and the original listing.
 
-![Comparison showing Python and SQL as required alongside profile documentation](docs/screenshots/comparison-coordinated-requirements.png)
+![Job comparison showing Python and SQL requirements](docs/screenshots/comparison-coordinated-requirements.png)
 
-### Search saved opportunities
+### Search
 
-BM25 keyword search retrieves saved listings for the query `AWS`.
-Search relevance is separate from requirement interpretation and
-candidate suitability.
+Search saved listings with BM25 keywords or semantic search.
 
-![BM25 search for AWS showing the submitted query and saved-listing results](docs/screenshots/search-bm25-aws.png)
+![BM25 search for AWS](docs/screenshots/search-bm25-aws.png)
 
 ### Collection insights
 
-Explore requirement categories across saved listings, alongside
-profile documentation and preparation guidance. Counts describe this
-saved collection, not the wider labour market.
+See which requirements appear across saved jobs and trace them back
+to individual listings.
 
-![Collection insights showing requirement counts and profile documentation](docs/screenshots/collection-insights.png)
+![Requirement counts across saved jobs](docs/screenshots/collection-insights.png)
 
-[View the full screenshot gallery](docs/SCREENSHOTS.md), including
-semantic search, metadata filtering, profile management, mixed
-requirements and language wording.
+[View all screenshots](docs/SCREENSHOTS.md)
 
 ## How it works
 
