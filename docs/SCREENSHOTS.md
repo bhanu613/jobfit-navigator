@@ -1,190 +1,121 @@
-# JobFit Navigator screenshot gallery
+# Screenshots
 
-Local interface captures from 23 October 2026.
+A walkthrough of JobFit Navigator using listings and profiles from my
+local testing on 23 October 2026.
 
-These screenshots show a development workspace containing demonstration
-and test listings. The Overview capture records 22 saved opportunities
-and 7 skill statements for the active profile.
+[Back to README](../README.md)
 
-Most captures use the `bhanu` profile; the final two use `test`.
-Profile notes and language levels are user-reported. Listing metadata
-is demonstration input, not verified employer information.
+## Overview
 
-The screenshots show individual application behaviours, not an
-independent accuracy benchmark or candidate suitability assessment.
-Theme colours vary between captures.
+The overview shows the saved job count, profile statements and required
+skills that still need documentation in the selected profile.
 
-[Back to the project README](../README.md)
-
-## Job comparison
-
-### Coordinated requirements
-
-The listing `sep. fict test 2` contains “Python and SQL are required.”
-Both concepts appear as Required, separately from their profile
-documentation status.
-
-![Coordinated Python and SQL requirements with original listing text](screenshots/comparison-coordinated-requirements.png)
-
-### Mixed requirement wording
-
-The listing `fict listing 4` contains both “Python is required” and
-“Python is desirable.” Its concept-level category is Needs review
-rather than silently choosing one interpretation.
-
-![Mixed Python requirement wording aggregated as Needs review](screenshots/comparison-mixed-requirements.png)
-
-### Second profile and explicit negation
-
-This capture uses the `test` profile. Python is Required, SQL is
-Desirable, and Docker is Not required. Docker nevertheless has an
-evidence statement in this profile: requirement categories and
-profile documentation are separate.
-
-![Test profile comparison separating required, desirable and not-required concepts](screenshots/comparison-test-profile-negation.png)
-
-### Language-only requirements
-
-This listing states “German B2 is required” and “English is desirable.”
-The interface shows German as Required and English as Desirable,
-with no technical concepts detected.
-
-This is a display of language requirement wording, not verification
-of a candidate's proficiency or an automatic language eligibility decision.
-
-![Language-only listing with German required and English desirable](screenshots/comparison-language-requirements.png)
-
-## Keyword search
-
-### AWS query
-
-The submitted BM25 query `AWS` returns six saved listings in this
-workspace. The top visible result is `Demo A`.
-
-![BM25 AWS query and top result](screenshots/search-bm25-aws.png)
-
-### Matching words and negated wording
-
-The explanation shows the matched word `aws`. Results also include
-a listing containing “AWS is not required”: keyword retrieval does
-not decide whether a matched concept is mandatory.
-
-![BM25 matched-word explanation and results including negated AWS wording](screenshots/search-bm25-explanation.png)
-
-### Language keyword query
-
-The BM25 query `german` returns a saved listing containing the
-German and English requirement statements.
-
-![BM25 search for german returning a saved language-requirement listing](screenshots/search-bm25-language-query.png)
-
-## Semantic search
-
-### Submitted semantic query
-
-Semantic mode returns ten results for the query `transformer`.
-This capture records a completed search in the local run; it does
-not establish retrieval accuracy or superiority over BM25.
-
-![Semantic search selected with transformer query and ten returned results](screenshots/search-semantic-query.png)
-
-### Returned listing cards
-
-The visible results include `nlp engineer` and `AI Engineer`, with
-their saved listing text and metadata.
-
-![Semantic result cards for NLP and AI engineering demonstration listings](screenshots/search-semantic-results.png)
-
-## Metadata filtering
-
-### Browse by location
-
-With the text query empty and `trier` selected as the location,
-the interface returns one listing in Browse mode.
-
-![Location-only browsing for Trier without a text query](screenshots/search-location-browse.png)
-
-## Collection insights
-
-### Requirement categories and documentation
-
-The table groups detected concepts into Required, Desirable,
-Needs review and Not required categories across saved listings.
-Profile documentation and next-step guidance appear alongside
-those counts.
-
-These are collection-level observations, not labour-market demand
-statistics or skill-proficiency scores.
-
-![Collection requirement counts alongside profile documentation](screenshots/collection-insights.png)
-
-### Listing traces and language totals
-
-The collection view links Python categories to individual saved
-listings and displays aggregated language requirement categories.
-
-![Python listing traces and language requirement totals](screenshots/collection-source-traces-languages.png)
-
-### Additional concepts and SQL traces
-
-Additional rows show optional preparation, concepts found only in
-not-required wording, and wording that needs review. The SQL trace
-connects its categories to saved listings.
-
-![Additional concept categories and SQL source-listing traces](screenshots/collection-additional-concepts.png)
+![Overview with 22 saved opportunities and 7 profile statements](screenshots/overview.png)
 
 ## Job library
 
-### Recent listings
+Saved listings include their source, company, location, work type and
+application status. Selecting a listing opens its full text.
 
-The library displays saved listing IDs, titles, application statuses,
-company, location, work type and source. The selected record shows
-its original requirement text.
+![Saved listings and their details](screenshots/job-library-recent-listings.png)
 
-![Recent saved listings with metadata and selected listing text](screenshots/job-library-recent-listings.png)
+![Original text of the AI Engineer test listing](screenshots/job-library-listing-details.png)
 
-### Listing details
+## Profile
 
-The selected `AI Engineer` record shows the saved description,
-including required knowledge, desirable concepts and request wording.
+The profile holds skill statements and supporting notes, along with
+role interests, preferred locations, work types and language levels.
 
-![Saved AI Engineer demonstration listing and original description](screenshots/job-library-listing-details.png)
+![Skills and evidence notes](screenshots/profile-skills-evidence.png)
 
-## Overview and profile
+![Job preferences and language statements](screenshots/profile-preferences-languages.png)
 
-### Workspace overview
+## Comparing a job
 
-The overview records 22 saved opportunities and 7 profile statements,
-with required concepts that may need further documentation.
+### Requirements from the same sentence
 
-![Workspace overview showing saved opportunities and profile statement counts](screenshots/overview.png)
+“Python and SQL are required” marks both skills as Required. The table
+shows the job requirement next to the selected profile's documentation,
+with the original text below.
 
-### Skill statements and evidence
+![Python and SQL identified as required](screenshots/comparison-coordinated-requirements.png)
 
-The profile stores concept-specific documentation statuses and notes,
-including evidenced, developing and self-reported statements.
-These are user-entered records, not independently verified abilities.
+### Mixed wording
 
-![Profile skill statements with documentation statuses and evidence notes](screenshots/profile-skills-evidence.png)
+This test listing calls Python both required and desirable. The app
+marks it as Needs review instead of choosing one category.
 
-### Preferences and language statements
+![Mixed Python requirements marked as Needs review](screenshots/comparison-mixed-requirements.png)
 
-The profile also stores role interests, preferred locations,
-work types and self-reported language statements.
+### A different profile and negated requirements
 
-![Profile preferences and self-reported language records](screenshots/profile-preferences-languages.png)
+With the `test` profile selected, Python and SQL have no recorded
+statements, while Docker has an evidence note. The listing itself
+requires Python, treats SQL as desirable and says Docker is not required.
 
-## Scope
+![Job requirements alongside the test profile's documentation](screenshots/comparison-test-profile-negation.png)
 
-Screenshots document the displayed local state at capture time.
-Results and counts can change when saved listings, concepts,
-reviews or profile statements change.
+### Language requirements
 
-Requirement interpretation is distinct from retrieval ranking.
-Missing profile documentation does not establish missing ability,
-and a retrieved listing is not an eligibility recommendation.
+This listing asks for German B2 and describes English as desirable.
+The language section shows these separately from technical skills.
 
-See [architecture](ARCHITECTURE.md) and
-[limitations](LIMITATIONS.md) for implementation details and boundaries.
+![German and English requirement wording](screenshots/comparison-language-requirements.png)
 
-[Back to the project README](../README.md)
+## BM25 keyword search
+
+Searching for `AWS` returns six saved listings. Each result includes
+its description and an option to see which words matched.
+
+![BM25 search for AWS](screenshots/search-bm25-aws.png)
+
+The results also include “AWS is not required.” BM25 matches the word;
+the comparison page handles its requirement status.
+
+![Matched words and a result containing negated AWS wording](screenshots/search-bm25-explanation.png)
+
+A second example searches for `german` and returns the listing with
+German and English requirements.
+
+![BM25 search for german](screenshots/search-bm25-language-query.png)
+
+## Semantic search
+
+The query `transformer` returns ten results in Semantic mode, including
+the saved NLP and AI engineering listings.
+
+![Semantic search query and result count](screenshots/search-semantic-query.png)
+
+![Semantic search result cards](screenshots/search-semantic-results.png)
+
+## Browsing by location
+
+Selecting Trier with no search text returns the saved listing for
+that location. The result is shown in Browse mode.
+
+![Browsing saved listings by location](screenshots/search-location-browse.png)
+
+## Collection insights
+
+This page brings together requirement counts across the saved jobs.
+Each skill has one category per listing, with the selected profile's
+documentation shown alongside it.
+
+![Requirement counts across saved jobs](screenshots/collection-insights.png)
+
+The listing traces show where each category comes from. Language
+requirement totals appear below them.
+
+![Python listing traces and language totals](screenshots/collection-source-traces-languages.png)
+
+Further rows include desirable skills, skills mentioned as not required,
+and wording that needs review.
+
+![Additional skill counts and SQL listing traces](screenshots/collection-additional-concepts.png)
+
+## Further details
+
+See [Architecture](ARCHITECTURE.md) for the application structure and
+[Limitations](LIMITATIONS.md) for known gaps.
+
+[Back to README](../README.md)
