@@ -10,7 +10,7 @@ MODE=os.environ.get('JOBFIT_MODE','demo').lower()
 if MODE not in ('demo','local'):st.error('Invalid JOBFIT_MODE');st.stop()
 try:
  if MODE=='demo':
-  if 'workspace' not in st.session_state:st.session_state.workspace=ws.demo()
+  if 'workspace' not in st.session_state:st.session_state.workspace=ws.public_demo()
   handle,DB=st.session_state.workspace
  else:
   DB=Path(os.environ.get('JOBFIT_DB',str(Path(__file__).parent/'data/navigator_local.db'))).resolve()

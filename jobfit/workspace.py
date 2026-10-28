@@ -75,3 +75,8 @@ def signature(path):
  c=sqlite3.connect(path)
  try:return hashlib.sha256('\n'.join(c.iterdump()).encode()).hexdigest()
  finally:c.close()
+
+
+def public_demo():
+ from .demo_seed import open_workspace
+ return open_workspace(setup)

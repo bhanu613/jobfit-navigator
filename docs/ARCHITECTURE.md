@@ -35,7 +35,7 @@ Everything is stored in SQLite: listings, profiles, aliases, revisions and revie
 The app has two modes:
 
 - **Local:** keeps a persistent workspace on your machine.
-- **Demo:** starts a temporary session with fictional data.
+- **Demo:** restores `demo/workspace.sql` into a new temporary database for each session. The seed includes listings, profiles, language statements, aliases and saved reviews. Reset creates a fresh copy. `workspace.demo()` remains the small automated-test fixture; the UI calls `workspace.public_demo()`.
 
 `launch.py` loads PyTorch before Streamlit starts. `tools/update_existing.py` backs up the source and database before copying new source files, and it never overwrites the database or the environment.
 
