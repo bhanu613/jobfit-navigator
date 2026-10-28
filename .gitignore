@@ -22,3 +22,6 @@ release-backup-*/
 *.sqlite*
 *.sql
 exports/
+
+# Published demo seed; other database and SQL files remain ignored.
+!demo/workspace.sql

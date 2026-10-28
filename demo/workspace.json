@@ -1,0 +1,116 @@
+{
+  "format": "jobfit-demo-sql-v1",
+  "sql_sha256": "63e83b0b3d2ca507f0b045036c9e6f39b32bae48834e64e324c227d9fde287bc",
+  "tables": {
+    "candidate_skills": {
+      "rows": 13,
+      "content_sha256": "6c98ad7b07037b850831a65f9ab112340df31078c3a29590d2ce95648b8dd19d"
+    },
+    "candidates": {
+      "rows": 2,
+      "content_sha256": "26b5b47a7008bc47adfc19fba7d028e01279fad299513de123540f36f06ced0b"
+    },
+    "completion_alias_state": {
+      "rows": 2,
+      "content_sha256": "8eade152fe9b8b5e33f1bdf7a6a7ea8d5f2e3b61c9366b1f7fe52e6d2aed7d7b"
+    },
+    "completion_esco": {
+      "rows": 0,
+      "content_sha256": "4900476fbe9401fd0a34612fef3d8671834ad685e03e7f2b5516af1a100c5e4b"
+    },
+    "completion_events": {
+      "rows": 4,
+      "content_sha256": "5ff48ae419f6ed0b58855e609e9d63471fc7c8fc5a6ebbaa4b13c38e9a7ce69a"
+    },
+    "completion_language_reviews": {
+      "rows": 0,
+      "content_sha256": "4daff614bed6edef47dc9dc1ae055101386c666568a19089d22862de95475d45"
+    },
+    "jf_batch_events": {
+      "rows": 0,
+      "content_sha256": "7534414c4c2bb11bc67523b8a8a93412af4b14dd309abc600ffb88f665d0e950"
+    },
+    "jf_batch_language": {
+      "rows": 0,
+      "content_sha256": "60be5df803c1345eb4ff60485f6b353dcc7d9a84d145b0e896fd88142ba95690"
+    },
+    "jobfit_revisions": {
+      "rows": 8,
+      "content_sha256": "84a5e5550fcccfde146a12c6a64edce37b6340b8895339d6d483a3da275325d2"
+    },
+    "jobfit_user_concepts": {
+      "rows": 6,
+      "content_sha256": "4ae46cf1df8c9992952379ae624d338ad27ba2285284f3bc14a8385a5ac9890f"
+    },
+    "jobs": {
+      "rows": 22,
+      "content_sha256": "dd55b1e29aa360c560df0c2d354196033dd63e0f0962348d7dd57298bf8977ee"
+    },
+    "navigator_catalogue_v3": {
+      "rows": 2,
+      "content_sha256": "18a3d5c426bf9eae7a25787f27cc8433dc6d0e32470c291e6369fa736bb89e4d"
+    },
+    "navigator_language_reviews_v4": {
+      "rows": 0,
+      "content_sha256": "4daff614bed6edef47dc9dc1ae055101386c666568a19089d22862de95475d45"
+    },
+    "navigator_languages_v2": {
+      "rows": 3,
+      "content_sha256": "ad16f778950fcae8c67c7d801c652af33b8133e77f589f655b238fdc2eebafa7"
+    },
+    "navigator_metadata_v3": {
+      "rows": 18,
+      "content_sha256": "49f007ba9064f43dc4bec615b29fd179eba6a7c1aac66b356e52931ad91ee41c"
+    },
+    "navigator_preferences_v3": {
+      "rows": 1,
+      "content_sha256": "4b12f8cce2844d1125ad5a4c9025c3b46660690ea25d4f259b2d94af66cb44ce"
+    },
+    "navigator_reviews_v2": {
+      "rows": 6,
+      "content_sha256": "a13d2aed2b6fd4b0fea27d120e30a81664cd44cce1ce20a8daf4fb4c851c55f4"
+    },
+    "navigator_wording_suggestions_v1": {
+      "rows": 0,
+      "content_sha256": "a634a86e25c3538ae44cf891d527ba8bcde173f20a68e9ead81c6ca8b27476cd"
+    },
+    "skill_aliases": {
+      "rows": 81,
+      "content_sha256": "e7a0db302174865a48f7033e459bd9e458dbc611e00112506ed3f3cda1c6166f"
+    },
+    "skills": {
+      "rows": 57,
+      "content_sha256": "4ac5204d36654b8ebe7856d677a745a9f1f57c8523d0da13a98a83c25ad18455"
+    }
+  },
+  "profiles": [
+    {
+      "candidate_id": 1,
+      "display_name": "bhanu"
+    },
+    {
+      "candidate_id": 2,
+      "display_name": "test"
+    }
+  ],
+  "languages": [
+    [
+      1,
+      "English",
+      "C1",
+      "expert"
+    ],
+    [
+      1,
+      "French",
+      "Not specified",
+      "Learning"
+    ],
+    [
+      1,
+      "German",
+      "A1",
+      "Learning"
+    ]
+  ]
+}

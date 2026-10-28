@@ -4,6 +4,10 @@ sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 from streamlit.testing.v1 import AppTest
 class UI(unittest.TestCase):
  def setUp(self):
+  from unittest.mock import patch
+  from jobfit import workspace as ws
+  fixture=patch("jobfit.workspace.public_demo",side_effect=ws.demo)
+  fixture.start();self.addCleanup(fixture.stop)
   self.old=os.environ.get('JOBFIT_MODE');os.environ['JOBFIT_MODE']='demo';self.at=AppTest.from_file(str(Path(__file__).resolve().parents[1]/'app.py'),default_timeout=12).run();self.clean()
  def tearDown(self):
   if self.old is None:os.environ.pop('JOBFIT_MODE',None)

@@ -6,7 +6,9 @@ A Python application for organising job listings, reviewing their requirements a
 
 [Open JobFit Navigator](https://jobfit-navigator.streamlit.app/)
 
-The online demo uses fictional data in a temporary workspace. It is not intended for storing personal data permanently.
+The demo opens with 22 saved listings, the `bhanu` and `test` profiles, and the skill notes, language records and reviews used during development. You can explore these examples or create a new profile. Changes stay in your session; **Reset demo workspace** restores the starting data.
+
+To try it: select `bhanu`, search for `AWS`, open a comparison, or inspect German and English wording in `german comp. incl. bavaria`. Switch to `test` to see different profile statements.
 
 ## What you can do
 
@@ -51,7 +53,7 @@ The application detects concept names and aliases, applies contextual rules to r
 
 Search combines a BM25 keyword baseline with passage embeddings from a pretrained multilingual Sentence Transformers model. Hybrid search merges the two rankings.
 
-The interface uses Streamlit, with SQLite for storage. Local mode keeps a persistent workspace. Demo mode starts with temporary fictional data.
+The interface uses Streamlit, with SQLite for storage. Local mode keeps a persistent workspace. Demo mode creates a session copy of the published workspace seed.
 
 See [Architecture](docs/ARCHITECTURE.md) for the implementation and [Limitations](docs/LIMITATIONS.md) for interpretation and evaluation details.
 
@@ -72,7 +74,7 @@ python -m venv .venv
 .\.venv\Scripts\python.exe -m streamlit run app.py
 ```
 
-The demo uses fictional session data. Use the local launcher for a persistent workspace.
+The demo loads the published workspace into a temporary session. Use the local launcher for a persistent workspace.
 
 ## Testing
 
@@ -80,10 +82,11 @@ The demo uses fictional session data. Use the local launcher for a persistent wo
 python -m unittest discover -s tests -v
 ```
 
-All 64 automated tests passed on Windows with Python 3.12. Manual checks also covered sidebar navigation, requirement interpretation for a fictional listing and a real semantic search.
+The previous release passed 64 automated tests on Windows with Python 3.12. Run the full suite for this update, including the published-workspace and session-isolation checks. The demo export also verifies that every exported table row survives a round trip.
 
 ## Project layout
 
+- `demo/`: published workspace SQL seed and integrity manifest
 - `app.py`: Streamlit interface
 - `launch.py`: persistent local startup
 - `jobfit/`: storage, concept matching, interpretation, reviews and retrieval
